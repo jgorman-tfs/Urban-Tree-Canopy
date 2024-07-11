@@ -13,17 +13,21 @@ The methods for this project are divided into two parts: Data processing into tr
 ## Part 1
 ### LiDAR
 TxGIO hosts an amazon web services bucket that is linked to each LiDAR dataset. The LiDAR Extractor script iterates through the selected cities of the ETJ, selects the appropriate LiDAR tiles, and downloads them from the bucket. <br>
-1.) Download the LiDAR Index of the selected dataset and import the shapefile into ArcGIS Pro
-2.) Select ETJ boundaries that intersect the LiDAR tiles and export the selected ETJ's to the UTC gdb. 
-3.) Change the names of the variables in the first cell. 
-4.) run the second and third cells to execute the code
-5.) A newly created GDB will appear in your folders with the processed.
-6.) Download the most recent NAIP imagery 
-7.) Start the QA/QC process, ensuring the polygons match up correctly with the NAIP imagery, deleting polygons as needed.
+1.) Download the LiDAR Index of the selected dataset and import the shapefile into ArcGIS Pro<br>
+2.) Select ETJ boundaries that intersect the LiDAR tiles and export the selected ETJ's to the UTC gdb. <br>
+3.) Change the names of the variables in the first cell. <br>
+4.) run the second and third cells to execute the code<br>
+5.) A newly created GDB will appear in your folders with the processed.<br>
+6.) Download the most recent NAIP imagery <br>
+7.) Start the QA/QC process, ensuring the polygons match up correctly with the NAIP imagery, deleting polygons as needed.<br>
 
 ### Raster Classification 
-Coming Soon!
-## Part 2
+Coming Soon!<br>
 
+## Part 2
+### UTC Processing
+With the polygons QA/QC'd, you can now run the UTC Processing script. The only thing you need to do here is assign the final gdb location and run the cells. <br>
+
+That's it! 
 
 
