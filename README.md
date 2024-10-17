@@ -22,14 +22,14 @@ Texas Geographic Information Office (TxGIO) hosts an amazon web services bucket 
 7.) Start the QA/QC process, ensuring the polygons match up correctly with the NAIP imagery, deleting polygons as needed.<br>
 
 ### Raster Classification 
-TxGIO also hosts NAIP imagery the same way throguh amazon s3 buckets. The Deep Learning Tree Canopy script will take the ETJ layer and iterate through the cities, downloading the appropriate NAIP tile using the NAIP Index, and applying the deep learning model. Pro tip: The NAIP tiles are always 4 band, JP2 Compressed rasters. The compressed county mosaics are MrSID 3 band, sometimes 4 band rasters.
-1.) Create a new ETJ layer from the cities you want to process and add to the map
-2.) Ensure the NAIP Index is loaded into the map
-3.) Update the variables to the appropriate file paths
-4.) The script will end with with 300 points for accuracy assessment
-5.) Perform the accuracy assessment and update the Accuracy spreadsheet
-6.) IF the accuracy is > 90%, that city can be used. 
-7.) There's a couple improvements that need to be made : redirect the final polygons to a single, separate GDB ; some points (50 - 100) are put outside the raster ; need to improve the cleanup for temp files
+TxGIO also hosts NAIP imagery the same way throguh amazon s3 buckets. The Deep Learning Tree Canopy script will take the ETJ layer and iterate through the cities, downloading the appropriate NAIP tile using the NAIP Index, and applying the deep learning model. Pro tip: The NAIP tiles are always 4 band, JP2 Compressed rasters. The compressed county mosaics are MrSID 3 band, sometimes 4 band rasters. <br>
+1.) Create a new ETJ layer from the cities you want to process and add to the map <br>
+2.) Ensure the NAIP Index is loaded into the map<br>
+3.) Update the variables to the appropriate file paths<br>
+4.) The script will end with with 300 points for accuracy assessment<br>
+5.) Perform the accuracy assessment and update the Accuracy spreadsheet<br>
+6.) IF the accuracy is > 90%, that city can be used. <br>
+7.) There's a couple improvements that need to be made : redirect the final polygons to a single, separate GDB ; some points (50 - 100) are put outside the raster ; need to improve the cleanup for temp files<br>
 
 ## Part 2
 ### UTC Processing
