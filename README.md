@@ -33,7 +33,7 @@ TxGIO also hosts NAIP imagery the same way throguh amazon s3 buckets. The Deep L
 
 ## Part 2
 ### UTC Processing
-With the polygons QA/QC'd, you can now run the UTC Processing script. This script is slightly different than the previous because it operates on the feature classes within the GDB instead of the layers within the map. So make sure the Polygons from the previous step are in one geodatabase, and they are the names of the Cities with no spaces. 
+With the polygons QA/QC'd, you can now run the UTC Processing script. This script is slightly different than the previous because it operates on the feature classes within the GDB instead of the layers within the map. So make sure the Polygons from the previous step are in one geodatabase, and they are the names of the Cities with no spaces. <br>
 
 That's it! 
 
